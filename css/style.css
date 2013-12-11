@@ -1,3 +1,102 @@
-.hero-unit h1 {
-    padding-bottom: 20px;
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700);
+
+#bg {
+	width: 100%;
+	height: 100%;  
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	z-index: -1; 
+	background-image: url(../images/bg.jpg) ;
+	background-repeat:no-repeat;
+	background-position: center center;
+	/* background-attachment: fixed; removed for Android */
+	  -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  -o-background-size: cover;
+	  background-size: cover;
+}
+
+/*body {
+	background: #308ff0;
+}*/
+
+header {
+	max-width: 480px;
+	margin: 0 auto;
+	text-align: center;
+	font-family: 'Lato', sans-serif;
+	margin-top: 30px;
+}
+
+header a.logo {
+	color: white;
+	text-decoration: none;
+	font-size: 34px;
+	margin-bottom: 20px;
+}
+
+header a.logo img {
+	position: relative;
+	left: -10px;
+	top: 17px;
+}
+
+header a.btn {
+	color: white;
+	display: block;
+	font-family: 'Lato', sans-serif;
+	font-size: 18px;
+	text-decoration: none;
+	background: transparent;
+	border: 1px solid white;
+	border-radius: 3px;
+	-webkit-border-radius:3px;
+	-moz-border-radius: 3px;
+	width: 280px;
+	line-height: 50px;
+	height: 50px;
+	margin: 0 auto;
+	margin-bottom: 100px;
+	
+	 -webkit-transition:all 0.2s ease;
+	       -moz-transition:all 0.2s ease;
+	        -ms-transition:all 0.2s ease;
+	         -o-transition:all 0.2s ease;
+	            transition:all 0.2s ease;
+}
+
+header a.btn:hover {
+	background: white;
+	color: #308ff0;
+}
+
+h1 {
+	font-size: 50px;
+	font-weight:100;
+	color: white;
+}
+
+p {
+	color: white;
+	font-family: 'Lato', sans-serif;
+	font-size: 18px;
+	font-weight: 200;
+	margin-top: 0;
+	margin-bottom: 30px;
+	padding: 0px 30px;
+}
+
+center img {max-width: 100%;height: auto; margin: 0; padding: 0;margin-bottom: -20px;
+}
+
+@media screen and (max-width: 400px) {
+	h1 {
+		font-size: 40px;
+		font-weight:100;
+		color: white;
+		padding: 10px;
+	}
 }
